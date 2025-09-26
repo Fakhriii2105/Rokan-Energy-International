@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Rokan Energy</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header id="navbar" class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="./assets/img/logo.png" alt="Rokan Energy Logo">
+            </a>
+            <!-- Nav Menu -->
+            <nav id="nav-menu" class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html" class="active">Projects</a></li>
+                    <li><a href="about.html#leadership">Leadership</a></li>
+                    <li><a href="#investor">Investor</a></li>
+                    <li class="dropdown">
+                        <a href="#">Others ▾</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="careers.html">Careers</a></li>
+                            <li><a href="news.html">News</a></li>
+                            <li><a href="partners.html">Partners</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Burger -->
+            <div class="burger" id="burger"><span></span><span></span><span></span></div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="projects-hero">
+        <div class="projects-hero-bg"></div>
+        <div class="projects-hero-content reveal">
+            <h1>Our Projects</h1>
+            <p>Shaping the future of energy through innovation, responsibility, and impact</p>
+            <a href="#about" class="btn">See Projects</a>
+        </div>
+    </section>
+
+    <!-- Projects Showcase -->
+    <section class="projects section reveal">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="card" style="background-image: url('./assets/img/drilling.jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <span class="stat">30+ Wells</span>
+                        <h3>Deepwater Drilling</h3>
+                        <p>Exploring offshore reserves with cutting-edge technology.</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./assets/img/lng.png');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <span class="stat">50 MTPA</span>
+                        <h3>LNG Terminals</h3>
+                        <p>Delivering LNG to power sustainable growth globally.</p>
+                    </div>
+                </div>
+                <div class="card" style="background-image: url('./assets/img/renewables.jpg');">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <span class="stat">5 GW</span>
+                        <h3>Renewable Integration</h3>
+                        <p>Blending oil & gas with renewables for the energy transition.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Map -->
+    <section class="projects-map section reveal">
+        <div class="container">
+            <h2>Explore Our Projects on Map</h2>
+            <p style="text-align:center;">Filter and discover our Oil, Natural Gas, and Geothermal projects across the
+                region.</p>
+
+            <!-- Filter Controls -->
+            <div class="filter-controls">
+                <button onclick="filterProjects('all')">All</button>
+                <button onclick="filterProjects('oil')">Oil</button>
+                <button onclick="filterProjects('gas')">Natural Gas</button>
+                <button onclick="filterProjects('geothermal')">Geothermal</button>
+            </div>
+
+            <!-- Map Container -->
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta section reveal">
+        <div class="container">
+            <h2>Looking Ahead</h2>
+            <p>Join us in shaping the future of sustainable energy.</p>
+            <a href="contact.html" class="btn">Contact Us</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer section reveal">
+        <div class="footer-container">
+            <div class="footer-about">
+                <img src="./assets/img/footer_logo.png" alt="Rokan Energy Logo">
+                <p>Delivering reliable energy today, shaping sustainable solutions for tomorrow.</p>
+            </div>
+            <div class="footer-links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact Us</h4>
+                <p>Email: info@rokanenergy.com</p>
+                <p>Phone: +62 812 3456 7890</p>
+                <p>Rokan Hulu, Indonesia</p>
+            </div>
+            <div class="footer-social">
+                <h4>Follow Us</h4>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Rokan Energy. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <!-- Custom Script -->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
